@@ -1,0 +1,24 @@
+{
+  "name": "pachapi",
+  "version": "1.0.0",
+  "description": "api designed for front end pachamanca apps",
+  "main": "index.js",
+  "dependencies": {
+    "bunyan": "^1.8.10",
+    "dotenv": "^4.0.0",
+    "jsonwebtoken": "^7.3.0",
+    "mongodb": "^2.2.25",
+    "restify": "^4.3.0",
+    "restify-errors": "^4.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "api"
+  ],
+  "author": "tex",
+  "license": "ISC"
+}
