@@ -1,13 +1,14 @@
 {
-  "name": "pachapi",
+  "name": "apibot",
   "version": "1.0.0",
-  "description": "api designed for front end pachamanca apps",
+  "description": "api designed for a facebook bot",
   "main": "index.js",
   "dependencies": {
     "bunyan": "^1.8.10",
     "dotenv": "^4.0.0",
     "jsonwebtoken": "^7.3.0",
     "mongodb": "^2.2.25",
+    "request": "^2.83.0",
     "restify": "^4.3.0",
     "restify-errors": "^4.3.0"
   },

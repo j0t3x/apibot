@@ -1,9 +1,7 @@
 //ENV VARIABLES
 require('dotenv').config();
-
 var restify = require('restify');
 var fs = require('fs');
-
 var bunyan = require('bunyan');
 var Logger = new bunyan({
   name: process.env.APP_NAME,
@@ -19,7 +17,6 @@ var Logger = new bunyan({
   ],
   serializers: bunyan.stdSerializers
 });
-
 
 var server = restify.createServer({
   //certificate: fs.readFileSync('path/to/server/certificate'),
@@ -66,6 +63,7 @@ const user = require('./controllers/index.js').user;
 const bot = require('./controllers/index.js').bot;
 /////////////////////////END CONTROLLERS/////////////////////////
 server.get('/verify', bot.verify );
+server.post('/verify', bot.receiveMessages );
 server.post('/user/login', user.authenticate );
 server.get('/user/:id', auth.isAuthenticated, user.get );
 server.post('/user/register', auth.isAuthenticated, user.create );
