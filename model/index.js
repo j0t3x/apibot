@@ -1,10 +1,8 @@
 ////////////////BEGIN model files////////////////
-var usermodel = require('./user');
-var botmodel = require('./bot');
+var osmRead = require('./osmRead').osmRead;
 
 /////////////////END model files/////////////////
 
 module.exports = {
-  user: usermodel,
-  bot: botmodel
+  osmRead: osmRead()
 };
