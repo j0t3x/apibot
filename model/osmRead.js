@@ -65,7 +65,7 @@ osmRead.prototype.setIndexes = function(){
 osmRead.prototype.getNear = function( latlng = [ -12.046374, -77.042793 ], d, tags = [ [ "amenity" , "stripclub" ] ], callback ){
 
   const col = this.getCollection();
-  console.log(latlng,d,tags)
+  //console.log(latlng,d,tags)
   // Find some documents
   col.find(
     { 
