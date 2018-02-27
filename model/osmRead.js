@@ -58,7 +58,7 @@ osmRead.prototype.setIndexes = function(){
   col.createIndex({'tags.natural': 1});
   col.createIndex({'tags.landuse': 1});
 
-  console.log('Created Indexes successfully');
+  //console.log('Created Indexes successfully');
 
 };
 
@@ -88,7 +88,7 @@ osmRead.prototype.getNear = function( latlng = [ -12.046374, -77.042793 ], d, ta
     }
   ).toArray(function(err, docs) {
     assert.equal(err, null);
-    console.log("Successful request :)");
+    //console.log("Successful request :)");
     callback(docs);
   });   
 

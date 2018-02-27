@@ -19,7 +19,7 @@ module.exports.findNearByAmenities = ( req, res, next ) => {
 	distance *= 1000;
 	let tags = validator.areTagsOk(req.params.tags) || [ "hospital", "fuel" ];
 	
-	console.log( loc, distance, tags)
+	//console.log( loc, distance, tags)
 
 	model.getNear(loc, distance, tags, function(data){
 		res.set({'content-type': 'application/json'});
